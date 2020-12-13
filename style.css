@@ -1,0 +1,330 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+section {
+	padding: 100px;
+}
+.banner {
+	position: relative;
+	min-height: 100vh;
+	/* https://i.pinimg.com/originals/4c/2d/e5/4c2de5df7ec88fb93d5f89cd68600ddd.jpg */
+	background: url(https://www.wallpapertip.com/wmimgs/31-316301_nature-mountains-snow-winter-mountain-wallpapers-hd-full.jpg);
+	background-size: cover;
+	background-position: right;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.banner h2 {
+	font-family: 'Acme', sans-serif;
+	font-size: 2em;
+	color: white;
+	font-weight: 500;
+	line-height: 1.5em;
+}
+.banner h3 {
+	font-size: 3em;
+	color: whitesmoke;
+	font-weight: 500;
+	line-height: 1.5em;
+}
+.btn {
+	position: relative;
+	background: #2196f3;
+	display: inline-block;
+	color: #fff;
+	margin-top: 20px;
+	padding: 10px 30px;
+	font-size: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-weight: 500;
+}
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 40px 100px;
+	z-index: 1000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.5s;
+}
+header.sticky {
+	background: #fff;
+	padding: 20px 100px;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+header .logo {
+	color: black;
+	font-size: 24px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+header .sticky.logo {
+	color: #111;
+}
+header ul {
+	position: relative;
+	display: flex;
+}
+header ul li {
+	position: relative;
+	list-style: none;
+}
+header ul li a {
+	font-size: 20px;
+	position: relative;
+	display: inline-block;
+	margin: 0 15px;
+	color: black;
+	text-decoration: none;
+}
+header .sticky ul li a {
+	color: #111;
+}
+p-1 {
+	margin-right: 250px;
+}
+.heading {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 30px;
+	color: black;
+}
+.heading h2 {
+	font-weight: 600;
+	font-size: 30px;
+}
+.content {
+	justify-content: space-between;
+}
+.contentbx {
+	padding-right: 30px;
+}
+.contentbx h3 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+.w50 {
+	font-size: 20px;
+	min-width: 40%;
+}
+.w50 img {
+	margin: 50px;
+}
+img {
+	max-width: 60%;
+}
+.services {
+	background: black;
+}
+.heading.white {
+	color: white;
+}
+.content {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.Bx {
+	padding: 40px, 20px;
+	background: black;
+	color: white;
+	max-width: 340px;
+	margin: 20px;
+	text-align: center;
+	transition: 0.5s;
+}
+.Bx:hover {
+	background: rgb(119, 108, 133);
+}
+.Bx img {
+	max-width: 80px;
+}
+.Bx h2 {
+	font-size: 25px;
+}
+.workBx {
+	max-width: 500px;
+	margin: 10px;
+	text-align: center;
+	transition: 0.5s;
+}
+.workBx img {
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 10px;
+}
+.contact {
+	background: black;
+}
+.formBx {
+	min-width: 60%;
+}
+.formBx form {
+	display: flex;
+	flex-direction: column;
+}
+.formBx form h3,
+.contactInfoBox h3 {
+	color: white;
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+.formBx form input,
+.formBx form textarea {
+	margin-bottom: 20px;
+	padding: 15px;
+	font-size: 16px;
+	background: transparent;
+	border: none;
+	outline: none;
+	background: #222;
+	color: white;
+	resize: none;
+}
+.formBx form textarea {
+	min-height: 200px;
+}
+.formBx form input::placeholder,
+.formBx form textarea::placeholder {
+	color: #999;
+}
+.formBx form input[type='submit'] {
+	max-width: 100px;
+	background: #2196f3;
+	cursor: pointer;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+.contactInfo {
+	min-width: 40%;
+}
+.contactInfoBox {
+	position: relative;
+}
+.contactInfoBox .box {
+	position: relative;
+	padding: 20px 0;
+	display: flex;
+}
+.contactInfoBox .box .icon {
+	min-width: 40px;
+	padding-top: 4px;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	font-size: 24px;
+}
+.contactInfoBox .box .text {
+	display: flex;
+	margin-left: 20px;
+	font-size: 16px;
+	color: #fff;
+	flex-direction: column;
+	font-weight: 300;
+}
+.contactInfoBox .box .text h3 {
+	font-weight: 500;
+	color: #2196f3;
+	margin-bottom: 0;
+}
+.copyright {
+	background: #000;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+}
+
+@media (max-width: 991px) {
+	header,
+	header.sticky {
+		padding: 20px 50px;
+		z-index: 1000;
+	}
+	.menu {
+		position: fixed;
+		top: 75px;
+		left: -100%;
+		display: block;
+		padding: 100px 50px;
+		text-align: center;
+		width: 100%;
+		height: 100vh;
+		background: #fff;
+		transition: 0.5s;
+		z-index: 999;
+		border-top: 1px solid rgba(0, 0, 0, 0.2);
+	}
+	.menu.active {
+		left: 0;
+	}
+	header ul li a {
+		color: #111;
+		font-size: 24px;
+		margin: 10px;
+	}
+	.toggle {
+		width: 40px;
+		height: 40px;
+		background: url(https://img.icons8.com/ios-filled/2x/menu.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 30px;
+		cursor: pointer;
+	}
+	.toggle.active {
+		background: url(https://img.icons8.com/ios/2x/multiply.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 30px;
+		cursor: pointer;
+	}
+	header.sticky.toggle {
+		filter: invert(1);
+	}
+	section {
+		padding: 100px;
+	}
+	.banner {
+		padding: 150px 50px 100px;
+	}
+	.banner h2 {
+		font-size: 1.5em;
+	}
+	.banner h3 {
+		font-size: 2em;
+	}
+	.btn {
+		margin-top: 10px;
+		padding: 10px 20px;
+		font-size: 16px;
+	}
+	.heading h2 {
+		font-size: 24px;
+	}
+	.content {
+		flex-direction: column;
+	}
+	.w50 {
+		margin-bottom: 20px;
+	}
+	p-1 {
+		margin-right: 250px;
+	}
+	.heading h2 {
+		font-size: 30px;
+	}
+}
